@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="survey.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="title">Online Shopping Survey Form</h1>
+            <p id="description">Thank you for taking the time to fillout the survey</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="email-label">Email address</label>
+                <input type="email" class="form-control" id="email" required placeholder="name@example.com">
+
+            </div>
+            <div class="form-group">
+                <label for="name-label">First Name</label>
+                <input type="Name" class="form-control" id="name" required placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="Name" class="form-control" id="lastName" required placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="number-label">Age(optional)</label>
+                <input type="number" class="form-control" id="number" max="80" min="16" placeholder="Age">
+            </div>
+            <div class="form-check">
+                <p>How often do you buy products online?</p>
+                <input class="form-check-input" type="radio" name="question1" id="radio1" value="option1">
+                <label class="form-check-label" for="radio1">
+                    Extremely often
+                </label>
+                </br>
+                <input class="form-check-input" type="radio" name="question1" id="radio2" value="option2">
+                <label class="form-check-label" for="radio2">
+                    Quite often
+                </label>
+                </br>
+                <input class="form-check-input" type="radio" name="question1" id="radio3" value="option3">
+                <label class="form-check-label" for="radio3">
+                    Slightyl often
+                </label>
+                </br>
+                <input class="form-check-input" type="radio" name="question1" id="radio4" value="option4" checked>
+                <label class="form-check-label" for="radio4">
+                    Not at all often
+                </label>
+            </div>
+            </br>
+            <div class="form-check">
+                <p>How comfortable are you buying products online from a company you know?</p>
+                <input class="form-check-input" type="radio" name="question2" id="radio1" value="option1">
+                <label class="form-check-label" for="radio1">
+                    Extremely comfortable
+                </label>
+                </br>
+                <input class="form-check-input" type="radio" name="question2" id="radio2" value="option2">
+                <label class="form-check-label" for="radio2">
+                    Quite comfortable
+                </label>
+                </br>
+                <input class="form-check-input" type="radio" name="question2" id="radio3" value="option3">
+                <label class="form-check-label" for="radio3">
+                    Slightyl comfortable
+                </label>
+                </br>
+                <input class="form-check-input" type="radio" name="question2" id="radio4" value="option4" checked>
+                <label class="form-check-label" for="radio4">
+                    Not at all comfortable
+                </label>
+
+            </div>
+            </br>
+            <div class="form-group">
+                <p class="p-text">What types of products do you typically buy online?</p>
+                <textarea class="form-control" id="question"></textarea>
+            </div>
+            <div class="form-group">
+                <p class="p-text">Which online retailers do you typically buy?</p>
+                <textarea class="form-control" id="question"></textarea>
+            </div>
+            <div class="form-group">
+                <p class="p-text">Which payment method do you use most often when buying products online?</p>
+                <select class="form-control" id="dropdown" name="payment">
+                    <option disabled selected>Select Payment option</option>
+                    <option value="debit card">Debit Card</option>
+                    <option value="credit card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="googlecheckout">Google Checkout</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <p>Which website do you more often use for online shopping?</p>
+                <input class="form-check-input" type="checkbox" value="amazon" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Amazon
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="eBay" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    eBay
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="target" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                    Target
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="walmart" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck4">
+                    Walmart
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="costco" id="defaultCheck5">
+                <label class="form-check-label" for="defaultCheck5">
+                    Costco
+                </label>
+            </div>
+            </br>
+            <div class="form-group">
+                <label for="commnents">Any Comments?</label>
+                <textarea class="form-control" id="comments" rows="3"
+                    placeholder="Enter your comments here..."></textarea>
+            </div>
+            <button type="submit" id="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
